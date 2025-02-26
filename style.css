@@ -1,0 +1,92 @@
+/* Updated style.css */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+header {
+    background-color: #ffe4c4;
+    padding: 20px;
+}
+
+nav {
+    background-color: #deb887;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    width: 80%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Commented out existing li styles */
+/* nav ul li {
+    display: inline;
+    margin-right: 20px;
+    width: 20px;
+} */
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.current {
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: #D3D3D3;
+}
+
+.current a {
+    color: #deb887;
+}
+
+main {
+    background-color: #6495ED;
+    font-size: 50px;   
+}
+
+/* Updated grid class */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+/* Style only images inside .grid */
+.grid img {
+    width: 100%;
+}
+
+/* Updated flex class */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Style only images inside nav */
+nav img {
+    width: 10%;
+}
+
+/* Skip to Main Content link */
+a.skip-link {
+    top: -40px;
+    left: 10px;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    z-index: 100;
+}
+
+a.skip-link:focus {
+    top: 10px;
+}
